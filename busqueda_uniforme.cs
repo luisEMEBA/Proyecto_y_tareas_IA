@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+//using UnityEngine;
 using System;
 using System.Linq;
 using System.Text;
@@ -27,6 +27,7 @@ namespace rompecabezas
        for(int i = 0; i < nodo_actual.hijos.Count; i++){
        Nodo hijo_actual = nodo_actual.hijos[i];
        if(hijo_actual.comprobacion()){
+       //Debug.Log("Se encontró la solución");
        Console.WriteLine("Se encontró la solución");
        meta = true;
        Rehacer_camino(Camino, hijo_actual);
@@ -48,6 +49,7 @@ namespace rompecabezas
         return contiene;
        }
        public void Rehacer_camino(List<Nodo> cam, Nodo n){
+       //Debug.Log("Rehaciendo el camino");
        Console.WriteLine("Rehaciendo el camino");
        Nodo actual = n;
        cam.Add(actual);

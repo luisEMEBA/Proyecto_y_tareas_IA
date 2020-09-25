@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+//using UnityEngine;
 using System;
 using System.Linq;
 using System.Text;
 
 namespace rompecabezas
 {
-   class puzzle
+   class puzzle 
   {
          static void Main(string[] args){
-         int[] puzz = {
+         int[] puzz = {     //Este es el estado INICIAL
          1, 2, 4,
          3, 0, 5,
          7, 6, 8  
@@ -26,9 +26,10 @@ namespace rompecabezas
          }
          }
          else{
-           Console.WriteLine("No hay solución.");
+           //Debug.Log("No se encontró solución");
+           Console.WriteLine("No se encontró solución.");
          }
-         Console.Read();
+         //Console.Read();
       }
   }
 }
