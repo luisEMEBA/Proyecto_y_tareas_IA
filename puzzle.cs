@@ -16,13 +16,13 @@ namespace rompecabezas
          7, 6, 8  
          };
 
-         Nodo nodo_inicial = new Nodo(puzz);
-         busqueda_uniforme bu = new busqueda_uniforme();
-         List<Nodo> res = bu.primero_amplitud(nodo_inicial);
+         Nodo nodo_inicial = new Nodo(puzz); //Se genera el nodo inicial
+         busqueda_uniforme bu = new busqueda_uniforme(); 
+         List<Nodo> res = bu.primero_amplitud(nodo_inicial); //Se efectúa la búsqueda
 
-         if(res.Count >0){
+         if(res.Count >0){ //Si el camino tiene elementos es porque se encontró solución
          for(int i = 0; i < res.Count; i++){
-         res[i].mostrar();
+         res[i].mostrar(); //Se enseña cada uno de los nodos del camino
          }
          }
          else{
